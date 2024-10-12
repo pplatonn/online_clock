@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin-top: 15%;
+    font-family: 'Ubuntu';
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clock_container {
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    font-size: 10rem;
+    color: white;
+}
+
+/* responsive design  */
+
+@media (max-width: 1140px) {
+    .clock_container {
+        font-size: 8rem;
+    }
+}
+@media (max-width: 675px) {
+    .clock_container {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 475px) {
+    .clock_container {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 340px) {
+    .clock_container {
+        font-size: 2rem;
+    }
+}
